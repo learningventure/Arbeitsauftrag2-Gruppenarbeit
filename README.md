@@ -12,6 +12,8 @@ Arbeitsauftrag 2 - Gruppenarbeit
     Dokumentieren Sie wiederum Ihre Arbeiten:
     Führen Sie die relevanten Konfigurationsdateien, die hochgeladenen Inhalte des Webservers, eine Kopie der WordPress-Datenbank und Ihre Dokumentation in einem tar-Archiv zusammen und laden Sie die gezippte Datei anschliessend hier hoch.
 
+Trying somethin
+	test
 
 Tasks:
 - LAMP
