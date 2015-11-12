@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  12 NOV 2015 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  12 NOV 2015 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,40 +364,64 @@ Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 14
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
-Overfull \hbox (14.30875pt too wide) in paragraph at lines 10--15
+<../Pics/start_apache.jpg, id=2, 1109.64563pt x 574.39594pt>
+File: ../Pics/start_apache.jpg Graphic file (type jpg)
+
+<use ../Pics/start_apache.jpg>
+Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 15.
+(pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
+
+<../Pics/a2enmod_userdir.jpg, id=3, 1109.64563pt x 574.39594pt>
+File: ../Pics/a2enmod_userdir.jpg Graphic file (type jpg)
+
+<use ../Pics/a2enmod_userdir.jpg>
+Package pdftex.def Info: ../Pics/a2enmod_userdir.jpg used on input line 16.
+(pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
+
+Overfull \hbox (14.30875pt too wide) in paragraph at lines 10--17
 \OT1/cmr/m/it/10 lucy:/home/gilles# apt-get in-stall mariadb-client-10.0 mariad
 b-server-10.0 apache2
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--15
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--17
+[]
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--17
+[]
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--17
 [] 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Pics
-/3-lamp-stack-mariadb.jpg>] [2]
-(./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
+/3-lamp-stack-mariadb.jpg>] [2 <../Pics/start_apache.jpg> <../Pics/a2enmod_user
+dir.jpg>] (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
 Here is how much of TeX's memory you used:
- 1701 strings out of 493089
- 23825 string characters out of 6134841
- 80887 words of memory out of 5000000
- 5178 multiletter control sequences out of 15000+600000
+ 1710 strings out of 493089
+ 24095 string characters out of 6134841
+ 80879 words of memory out of 5000000
+ 5185 multiletter control sequences out of 15000+600000
  7933 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,290b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (2 pages, 1562
-87 bytes).
+</usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (2 pages, 2397
+67 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
