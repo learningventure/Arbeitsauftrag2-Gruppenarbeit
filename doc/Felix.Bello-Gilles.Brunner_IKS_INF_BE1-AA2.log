@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,42 +405,139 @@ Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 30
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+<../Pics/21-maria-db-login-success.png, id=14, 1135.24126pt x 650.43pt>
+File: ../Pics/21-maria-db-login-success.png Graphic file (type png)
+
+<use ../Pics/21-maria-db-login-success.png>
+Package pdftex.def Info: ../Pics/21-maria-db-login-success.png used on input li
+ne 39.
+(pdftex.def)             Requested size: 369.88582pt x 211.92317pt.
+
+<../Pics/22-maria-db-create.png, id=16, 1128.215pt x 645.41125pt>
+File: ../Pics/22-maria-db-create.png Graphic file (type png)
+
+<use ../Pics/22-maria-db-create.png>
+Package pdftex.def Info: ../Pics/22-maria-db-create.png used on input line 43.
+(pdftex.def)             Requested size: 369.88582pt x 211.59778pt.
+
+<../Pics/23-maria-db-create-success.png, id=17, 1132.23pt x 652.4375pt>
+File: ../Pics/23-maria-db-create-success.png Graphic file (type png)
+
+<use ../Pics/23-maria-db-create-success.png>
+Package pdftex.def Info: ../Pics/23-maria-db-create-success.png used on input l
+ine 47.
+(pdftex.def)             Requested size: 369.88582pt x 213.14471pt.
+
+<../Pics/24-maria-db-show.png, id=18, 1130.2225pt x 646.415pt>
+File: ../Pics/24-maria-db-show.png Graphic file (type png)
+
+<use ../Pics/24-maria-db-show.png>
+Package pdftex.def Info: ../Pics/24-maria-db-show.png used on input line 51.
+(pdftex.def)             Requested size: 369.88582pt x 211.54218pt.
+
+<../Pics/25-maria-db-show-success.png, id=19, 1135.24126pt x 652.4375pt>
+File: ../Pics/25-maria-db-show-success.png Graphic file (type png)
+
+<use ../Pics/25-maria-db-show-success.png>
+Package pdftex.def Info: ../Pics/25-maria-db-show-success.png used on input lin
+e 55.
+(pdftex.def)             Requested size: 369.88582pt x 212.57726pt.
+
+<../Pics/26-maria-db-quit.png, id=20, 1129.21875pt x 648.4225pt>
+File: ../Pics/26-maria-db-quit.png Graphic file (type png)
+
+<use ../Pics/26-maria-db-quit.png>
+Package pdftex.def Info: ../Pics/26-maria-db-quit.png used on input line 59.
+(pdftex.def)             Requested size: 369.88582pt x 212.39702pt.
+
+<../Pics/27-maria-db-quit-success.png, id=21, 1132.23pt x 659.46375pt>
+File: ../Pics/27-maria-db-quit-success.png Graphic file (type png)
+
+<use ../Pics/27-maria-db-quit-success.png>
+Package pdftex.def Info: ../Pics/27-maria-db-quit-success.png used on input lin
+e 63.
+(pdftex.def)             Requested size: 369.88582pt x 215.44012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--65
 
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--34
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 27--65
+
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--65
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--65
 
  []
 
 [2 <../Pics/start_apache.jpg> <../Pics/apach2restart.jpg>] [3 <../Pics/3-lamp-s
-tack-mariadb.jpg>] (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
+tack-mariadb.jpg>] [4 <../Pics/21-maria-db-login-success.png> <../Pics/22-maria
+-db-create.png>] [5 <../Pics/23-maria-db-create-success.png> <../Pics/24-maria-
+db-show.png>] [6 <../Pics/25-maria-db-show-success.png> <../Pics/26-maria-db-qu
+it.png>] [7 <../Pics/27-maria-db-quit-success.png>]
+(./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
 Here is how much of TeX's memory you used:
- 1714 strings out of 493089
- 24125 string characters out of 6134841
- 81879 words of memory out of 5000000
- 5188 multiletter control sequences out of 15000+600000
+ 1749 strings out of 493089
+ 25367 string characters out of 6134841
+ 82879 words of memory out of 5000000
+ 5216 multiletter control sequences out of 15000+600000
  8292 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,438b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 2660
-12 bytes).
+</usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (7 pages, 1571
+129 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
