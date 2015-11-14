@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,13 +356,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
 
-Overfull \hbox (14.30875pt too wide) in paragraph at lines 12--16
+Overfull \hbox (14.30875pt too wide) in paragraph at lines 11--15
 \OT1/cmr/m/it/10 lucy:/home/gilles# apt-get in-stall mariadb-client-10.0 mariad
 b-server-10.0 apache2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
@@ -370,29 +370,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--16
 File: ../Pics/start_apache.jpg Graphic file (type jpg)
 
 <use ../Pics/start_apache.jpg>
-Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 17.
+Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 16.
 (pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
 
 <../Pics/apach2restart.jpg, id=2, 1108.8928pt x 572.89032pt>
 File: ../Pics/apach2restart.jpg Graphic file (type jpg)
 
 <use ../Pics/apach2restart.jpg>
-Package pdftex.def Info: ../Pics/apach2restart.jpg used on input line 18.
+Package pdftex.def Info: ../Pics/apach2restart.jpg used on input line 17.
 (pdftex.def)             Requested size: 369.88582pt x 191.09117pt.
 
-Overfull \hbox (39.88582pt too wide) in paragraph at lines 17--19
+Overfull \hbox (39.88582pt too wide) in paragraph at lines 16--18
 [][]
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 16--18
 [] 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (92.80638pt too wide) in paragraph at lines 21--26
+Overfull \hbox (92.80638pt too wide) in paragraph at lines 20--22
 \OT1/cmr/m/n/10 Installation auf dem Server unter fol-gen-dem Dateip-fad in-sta
 l-liert wer-den: /var/www/html/wordpress.
  []
@@ -401,21 +401,21 @@ l-liert wer-den: /var/www/html/wordpress.
 File: ../Pics/3-lamp-stack-mariadb.jpg Graphic file (type jpg)
 
 <use ../Pics/3-lamp-stack-mariadb.jpg>
-Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 30
+Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 26
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 27--34
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 23--30
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
 
  []
 
@@ -428,7 +428,7 @@ Here is how much of TeX's memory you used:
  5188 multiletter control sequences out of 15000+600000
  8292 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,438b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,23p,498b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/lo
@@ -436,8 +436,8 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 2660
-12 bytes).
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 2638
+45 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
