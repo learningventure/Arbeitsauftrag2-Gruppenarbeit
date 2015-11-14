@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  12 NOV 2015 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,21 +272,27 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
 (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux)
 \openout1 = `Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -350,17 +356,26 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 7.
+(Font)              <12> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 7.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 7.
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 8.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 11.
 
 <../Pics/3-lamp-stack-mariadb.jpg, id=1, 1106.63437pt x 602.25pt>
 File: ../Pics/3-lamp-stack-mariadb.jpg Graphic file (type jpg)
 
 <use ../Pics/3-lamp-stack-mariadb.jpg>
-Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 14
+Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 21
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
@@ -368,57 +383,57 @@ Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 14
 File: ../Pics/start_apache.jpg Graphic file (type jpg)
 
 <use ../Pics/start_apache.jpg>
-Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 15.
+Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 22.
 (pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
 
 <../Pics/a2enmod_userdir.jpg, id=3, 1109.64563pt x 574.39594pt>
 File: ../Pics/a2enmod_userdir.jpg Graphic file (type jpg)
 
 <use ../Pics/a2enmod_userdir.jpg>
-Package pdftex.def Info: ../Pics/a2enmod_userdir.jpg used on input line 16.
+Package pdftex.def Info: ../Pics/a2enmod_userdir.jpg used on input line 23.
 (pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
 
 <../Pics/apach2restart.jpg, id=4, 1108.8928pt x 572.89032pt>
 File: ../Pics/apach2restart.jpg Graphic file (type jpg)
 
 <use ../Pics/apach2restart.jpg>
-Package pdftex.def Info: ../Pics/apach2restart.jpg used on input line 17.
+Package pdftex.def Info: ../Pics/apach2restart.jpg used on input line 24.
 (pdftex.def)             Requested size: 369.88582pt x 191.09117pt.
 
 <../Pics/6_userdirconf.jpg, id=5, 1112.65688pt x 575.90157pt>
 File: ../Pics/6_userdirconf.jpg Graphic file (type jpg)
 
 <use ../Pics/6_userdirconf.jpg>
-Package pdftex.def Info: ../Pics/6_userdirconf.jpg used on input line 18.
+Package pdftex.def Info: ../Pics/6_userdirconf.jpg used on input line 25.
 (pdftex.def)             Requested size: 369.88582pt x 191.4541pt.
 
-Overfull \hbox (14.30875pt too wide) in paragraph at lines 10--19
+Overfull \hbox (14.30875pt too wide) in paragraph at lines 17--26
 \OT1/cmr/m/it/10 lucy:/home/gilles# apt-get in-stall mariadb-client-10.0 mariad
 b-server-10.0 apache2
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--26
 []
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--26
 []
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--26
 []
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--26
 []
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--26
 [] 
  []
 
@@ -429,24 +444,25 @@ Overfull \hbox (24.88582pt too wide) in paragraph at lines 10--19
 dir.jpg>] [3 <../Pics/apach2restart.jpg> <../Pics/6_userdirconf.jpg>]
 (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
 Here is how much of TeX's memory you used:
- 1720 strings out of 493089
- 24367 string characters out of 6134841
- 80879 words of memory out of 5000000
- 5193 multiletter control sequences out of 15000+600000
- 7933 words of font info for 28 fonts, out of 8000000 for 9000
+ 1908 strings out of 493089
+ 26312 string characters out of 6134841
+ 83475 words of memory out of 5000000
+ 5369 multiletter control sequences out of 15000+600000
+ 9215 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,290b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,23p,274b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 3705
-81 bytes).
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 3779
+96 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
