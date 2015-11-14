@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,50 +397,104 @@ Overfull \hbox (92.80638pt too wide) in paragraph at lines 20--22
 l-liert wer-den: /var/www/html/wordpress.
  []
 
-<../Pics/3-lamp-stack-mariadb.jpg, id=13, 1106.63437pt x 602.25pt>
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ...https://httpd.apache.org/docs/2.2/mod/mod_
+                                                  alias.html\#alias
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 23.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	\subsection
+                 {MariaDB}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (184.84865pt too wide) in paragraph at lines 23--27
+\OT1/cmr/m/n/10 angeschaut haben, befindet sich hier: https://httpd.apache.org/
+docs/2.2/mod/mod$[]\OML/cmm/m/it/10 lias:html\OT1/cmr/m/n/10 #\OML/cmm/m/it/10 
+aliasDieIdeeistfolgende \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (807.02458pt too wide) in paragraph at lines 23--27
+\OML/cmm/m/it/10 Thedirectivescontainedinthismoduleallowformanipulationandcontr
+olofURLsasrequestsarriveattheserver:TheAliasandScriptAliasdirectivesareusedtoma
+pbetweenURLsandfilesystempaths:Dasheisst; dassmanmiteinerbestimmtenURL\OT1/cmr/
+m/n/10 (\OML/cmm/m/it/10 inunseremFalleIP \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (328.09178pt too wide) in paragraph at lines 23--27
+\OML/cmm/m/it/10 adresse=blog\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 aufeinenbestimmt
+enPfadaufdemServerselbstzugreifenkann\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 inunsere
+mFalle=var=www=html=wordpress\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :DazumussdieVirt
+ualHost \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (108.37889pt too wide) in paragraph at lines 23--27
+\OML/cmm/m/it/10 Konfigurationsdateiin=etc=apache\OT1/cmr/m/n/10 2\OML/cmm/m/it
+/10 =sites \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 available=wordpress:confentspr
+echendangepasstwerden \OT1/cmr/m/n/10 :$ 
+ []
+
+[2 <../Pics/start_apache.jpg> <../Pics/apach2restart.jpg>]
+<../Pics/3-lamp-stack-mariadb.jpg, id=18, 1106.63437pt x 602.25pt>
 File: ../Pics/3-lamp-stack-mariadb.jpg Graphic file (type jpg)
 
 <use ../Pics/3-lamp-stack-mariadb.jpg>
-Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 26
+Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 31
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
 
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 23--30
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 28--35
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
 
  []
 
-[2 <../Pics/start_apache.jpg> <../Pics/apach2restart.jpg>] [3 <../Pics/3-lamp-s
-tack-mariadb.jpg>] (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
+[3 <../Pics/3-lamp-stack-mariadb.jpg>]
+(./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux) ) 
 Here is how much of TeX's memory you used:
- 1714 strings out of 493089
- 24125 string characters out of 6134841
- 81879 words of memory out of 5000000
- 5188 multiletter control sequences out of 15000+600000
+ 1716 strings out of 493089
+ 24153 string characters out of 6134841
+ 82879 words of memory out of 5000000
+ 5190 multiletter control sequences out of 15000+600000
  8292 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,498b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 2638
-45 bytes).
+</usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (3 pages, 2956
+89 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
