@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  14 NOV 2015 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,21 +462,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
 
-Overfull \hbox (14.30875pt too wide) in paragraph at lines 12--16
-\OT1/cmr/m/it/10 lucy:/home/gilles# apt-get in-stall mariadb-client-10.0 mariad
-b-server-10.0 apache2
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
-
- []
-
 <../Pics/start_apache.jpg, id=40, 1109.64563pt x 574.39594pt>
 File: ../Pics/start_apache.jpg Graphic file (type jpg)
 
 <use ../Pics/start_apache.jpg>
-Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 17.
+Package pdftex.def Info: ../Pics/start_apache.jpg used on input line 16.
 (pdftex.def)             Requested size: 369.88582pt x 191.46191pt.
 
 <../Pics/apach2restart.jpg, id=41, 1108.8928pt x 572.89032pt>
@@ -486,70 +476,82 @@ File: ../Pics/apach2restart.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../Pics/apach2restart.jpg used on input line 18.
 (pdftex.def)             Requested size: 369.88582pt x 191.09117pt.
 
-Overfull \hbox (39.88582pt too wide) in paragraph at lines 17--19
-[][]
+Overfull \hbox (14.30875pt too wide) in paragraph at lines 12--20
+\OT1/cmr/m/it/10 lucy:/home/gilles# apt-get in-stall mariadb-client-10.0 mariad
+b-server-10.0 apache2
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 17--19
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 12--20
 [] 
+ []
+
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 12--20
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--20
+
  []
 
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (92.80638pt too wide) in paragraph at lines 21--23
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Pics
+/start_apache.jpg>]
+Overfull \hbox (92.80638pt too wide) in paragraph at lines 22--24
 \OT1/cmr/m/n/10 Installation auf dem Server unter fol-gen-dem Dateip-fad in-sta
 l-liert wer-den: /var/www/html/wordpress.
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 24.
+(Font)              <5> on input line 25.
 <../Pics/wordpress.png, id=53, 1431.09656pt x 750.55406pt>
 File: ../Pics/wordpress.png Graphic file (type png)
 
 <use ../Pics/wordpress.png>
-Package pdftex.def Info: ../Pics/wordpress.png used on input line 30.
+Package pdftex.def Info: ../Pics/wordpress.png used on input line 31.
 (pdftex.def)             Requested size: 369.88582pt x 193.9942pt.
 
-Overfull \hbox (2.94514pt too wide) in paragraph at lines 24--35
+Overfull \hbox (2.94514pt too wide) in paragraph at lines 25--36
 \OT1/cmr/m/n/10 VirtualHost- Kon-fig-u-ra-tions-datei in /etc/apache2/sites-ava
 ilable/wordpress.conf
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--35
+Underfull \hbox (badness 10000) in paragraph at lines 25--36
 
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 24--35
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 25--36
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--35
+Underfull \hbox (badness 10000) in paragraph at lines 25--36
 
  []
 
 
-Overfull \hbox (21.33397pt too wide) in paragraph at lines 24--35
+Overfull \hbox (21.33397pt too wide) in paragraph at lines 25--36
 \OT1/cmr/m/n/10 Die VirtualHost-Konfigurationsdatei befindet sich wie erw^^?ahn
 t in /etc/apache2/sites-
  []
 
-[2 <../Pics/start_apache.jpg> <../Pics/apach2restart.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+[2 <../Pics/apach2restart.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
 
-Overfull \hbox (36.72298pt too wide) in paragraph at lines 46--48
+Overfull \hbox (36.72298pt too wide) in paragraph at lines 47--49
 \OT1/cmr/m/n/10 path) der Vir-tu-al-Host Konfigurations-Datei /etc/apache2/site
 s-available/wordpress.conf
  []
@@ -559,40 +561,40 @@ s-available/wordpress.conf
 File: ../Pics/3-lamp-stack-mariadb.jpg Graphic file (type jpg)
 
 <use ../Pics/3-lamp-stack-mariadb.jpg>
-Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 52
+Package pdftex.def Info: ../Pics/3-lamp-stack-mariadb.jpg used on input line 53
 .
 (pdftex.def)             Requested size: 369.88582pt x 201.2978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--56
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 49--56
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 50--57
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--56
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
-[4 <../Pics/3-lamp-stack-mariadb.jpg>] [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
+[4 <../Pics/3-lamp-stack-mariadb.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 
 (./Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.o
 ut' has not changed.
 (rerunfilecheck)             Checksum: 27467C3C0A6526ED30A3799CBCE9ABC6;451.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 5325 strings out of 493089
- 79007 string characters out of 6134841
- 162600 words of memory out of 5000000
+ 5324 strings out of 493089
+ 79001 string characters out of 6134841
+ 161600 words of memory out of 5000000
  8755 multiletter control sequences out of 15000+600000
  8460 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -605,11 +607,11 @@ usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (5 pages, 4712
-02 bytes).
+Output written on Felix.Bello-Gilles.Brunner_IKS_INF_BE1-AA2.pdf (4 pages, 4706
+76 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
