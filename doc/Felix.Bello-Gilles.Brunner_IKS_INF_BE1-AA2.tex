@@ -9,9 +9,9 @@
 \begin{document}
 	\maketitle
 	\section{Einführung}
-	Nachstehend wird beschrieben, wie wir für eine Wordpress-Installation im Rahmen des Moduls IKS vorgehen. Da wir die Aufgabe auf unserem Debian-Server statt einem CentOS-Server lösen, gibt es einige Unterschiede bei gewissen Namen: Apache ist nicht unter httpd zu finden, sondern Apache2 und der Benutzer und die Gruppe für unseren Webpfad ist \textit{www-data} (das nur als Info, damit es bei der Aufführung unsere Pfade und 	Benutzerberechtigungen kein Durcheinander gibt.) Mit Ausnahme von Linux (versteht sich von selbst) und PHP, das wir für unsere Wordpress-Installation nicht extra konfigurieren mussten, widmen wir uns nachfolgend den einzelnen Komponenten unseres LAMP-Stacks.
+	Nachstehend wird beschrieben, wie wir für eine WordPress-Installation im Rahmen des Moduls IKS vorgehen. Da wir die Aufgabe auf unserem Debian-Server statt einem CentOS-Server lösen, gibt es einige Unterschiede bei gewissen Namen: Apache ist nicht unter httpd zu finden, sondern \textit{apache2} und der Benutzer und die Gruppe für unseren Webpfad ist \textit{www-data} (das nur als Info, damit es bei der Aufführung unserer Pfade und 	Benutzerberechtigungen kein Durcheinander gibt.) Mit Ausnahme von Linux (versteht sich von selbst) und PHP, das wir für unsere WordPress-Installation nicht extra konfigurieren mussten, widmen wir uns nachfolgend den einzelnen Komponenten unseres LAMP-Stacks.
 	\section{LAMP}
-	Begonnen wird die Aufgabe mit der Instatallation eines LAMP-Stacks. In unserem Fall bezieht sich dieses Akronym auf: Linux, Apache, MariaDB und PHP. Es gibt Scripts für LAMP-Installationen, aber wir haben uns dafür entschieden, die erforderlichen Pakete direkt über den Paketmanager zu beziehen. Da wir unsere Arbeit gemeinsam machen sollten, haben wir uns über SSH mit unserem Server verbunden und mit screen eine Session geteilt, damit beide sich aktiv beteiligen können und immer genau sehen, was der andere macht. Nachfolgend die Terminal-Befehle und entsprechenden Screenshots zur Illustration:
+	Begonnen wird die Aufgabe mit der Installation eines LAMP-Stacks. In unserem Fall bezieht sich dieses Akronym auf: Linux, Apache, MariaDB und PHP. Es gibt Scripts für LAMP-Installationen, aber wir haben uns dafür entschieden, die erforderlichen Pakete direkt über den Paketmanager zu beziehen. Da wir unsere Arbeit gemeinsam machen sollten, haben wir uns über SSH mit unserem Server verbunden und mit dem Programm \textit{screen} eine Session geteilt, damit beide sich aktiv beteiligen können und immer genau sehen, was der andere macht. Nachfolgend die Terminal-Befehle und entsprechenden Screenshots zur Illustration:
 	\linebreak
 	SSH-Verbindung:
 	\begin{lstlisting}[language=bash]
@@ -44,8 +44,8 @@
 	\newline
 	Nach erfolgreichem Festlegen des Passworts für den MariaDB-root-user schliesst sich das Fenster wieder. Das Einrichten der Datenbank besprechen wir in der Sektion MariaDB.
 	\subsection{Apache}
-	Gemäss der im Auftrag erfordlichen Konfigurationsdateien muss die Wordpress-Installation auf dem Server unter /var/www/html/wordpress installiert werden.
-	Allerdings soll Wordpress auf IP-Adresse/blog aufgerufen werden. Dazu muss der VirtualHost in /etc/apache2/sites-available/ angepasst werden.
+	Gemäss der im Auftrag erfordlichen Konfigurationsdateien muss die WordPress-Installation auf dem Server unter /var/www/html/wordpress installiert werden.
+	Allerdings soll WordPress mit IP-Adresse/blog aufgerufen werden. Dazu muss der VirtualHost in /etc/apache2/sites-available/ angepasst werden.
 	\subsubsection{VirtualHost}
 	Die VirtualHost-Konfigurationsdatei befindet sich in /etc/apache2/sites-available/
 	Darin befindet sich am Anfang eine Standard-Konfigurationsdatei mit dem Namen:
@@ -63,10 +63,10 @@
 	Der Grund dafür ist, wenn beide Konfigurationsdateien aktiviert sind (d.h. 000-default.conf und wordpress.conf), dann wird nur 000-default.conf verwendet, weil sie alphabetisch vor wordpress.conf kommt (das kann man testen, wenn man 000-default.conf deaktiviert und in sites-available folgendermassen umbenennt: x000-default.conf). Wenn man x000-default.conf und wordpress.conf beide aktiviert, wird dieses mal wordpress.conf verwendet, weil w vor x kommt (diese möchten wir nur am Rande anmerken, weil wir uns beim Testen kurz mit dieser Situation auseinandersetzen mussten).
 	\newline
 	\newline
-	Dazu möchten wir noch anmerken, dass dies allerdings nicht eintreffen sollte, wenn man einen Server mit Domain Name hat (z.B www.meinserver.ch) und einer entsprechend (gleich) benannten VHost.conf Datei (dem erwähnten Beispiel hier: meinserver.ch.conf). 
+	Zudem sei gesagt, dass dies allerdings nicht eintreffen sollte, wenn die VHost.conf Datei gleich benannt ist wie die IP-Adresse oder der DomainName. 
 	\newline
 	\newline
-	Wie bereits erwähnt soll die Wordpress-Installation auf dem Server unter dem Dateipfad /var/www/html/wordpress erfolgen, allerdings mit IP-Adresse/blog erreichbar sein. Das funktioniert ohne entsprechende Anpassung in der VHost-Konfigurationsdatei allerdings nicht, weil was nach der IP-Adresse folgt, ist der System-Pfad der auf den im DocumentRoot angebenen Pfad folgt. Wenn im DocumentRoot z.B. /var/www/html steht, wird unsere Wordpress-Seite automatisch über IP-Adresse/wordpress zu erreichen sein, weil sie sich im Verzeichnis /var/www/html/wordpress befindet (also im DocumentRoot /var/www/html).
+	Wie bereits erwähnt soll die WordPress-Installation auf dem Server unter dem Dateipfad /var/www/html/wordpress erfolgen, allerdings mit IP-Adresse/blog erreichbar sein. Das funktioniert ohne entsprechende Anpassung in der VHost-Konfigurationsdatei allerdings nicht, weil was nach der IP-Adresse folgt, ist der System-Pfad der auf den im DocumentRoot angebenen Pfad folgt. Wenn im DocumentRoot z.B. /var/www/html steht, wird unsere WordPress-Seite automatisch über IP-Adresse/wordpress zu erreichen sein, weil sie sich im Verzeichnis /var/www/html/wordpress befindet (also im DocumentRoot /var/www/html).
 	\newline
 	\newline
 	Zur Lösung dieses Problems verwenden wir gemäss Dokumentation \url{https://httpd.apache.org/docs/2.2/mod/mod_alias.html\#alias} ein sogenanntes \textit{Alias}. Die Idee ist folgende:
@@ -85,7 +85,7 @@
     \newline IP-Adresse/wordpress nicht auf den Blog führen soll (es reicht, wenn man über /blog drauf kommt). Zu diesem Zweck haben wir eine index.html mit einer kleinen Nachricht definiert. Schliesslich ist zu erwähnen, dass wir unsere VHost-Datei auf das Wesentliche beschränkt haben, d.h. wir haben sie nur mit dem für die zur Erfüllung der Aufgabe erfordlichen Inhalt bestückt.
 	
 	\subsection{MariaDB}
-	Weil wir für Wordpress eine Datenbank brauchen, haben wir uns wie bereits erwähnt für \textit{\textbf{MariaDB}} als Datenbank entschieden und wie bereits in der LAMP-Sektion beschrieben installiert sowie ein Passwort für den root user der MariaDB festgelegt. Nun kümmern wir uns um die Einrichtung.
+	Weil wir für WordPress eine Datenbank brauchen, haben wir uns wie bereits erwähnt für \textit{\textbf{MariaDB}} als Datenbank entschieden und wie bereits in der LAMP-Sektion beschrieben installiert sowie ein Passwort für den root user der MariaDB festgelegt. Nun kümmern wir uns um die Einrichtung.
 	\newline
 	\newline
 	Zunächst einmal müssen wir uns einloggen, das machen wir mit folgendem befehl:
@@ -98,14 +98,14 @@
 	Abbildung 3: Login MariaDB
 	\newline
 	\newline
-	Nun können wir die eigentliche Datenbank erstellen. Das machen wir mit dem in Abbildung 4 dargestellten Befehl:
+	Nun können wir die eigentliche Datenbank erstellen. Das machen wir mit dem auf Abbildung 4 dargestellten Befehl:
 	\newline
 	\newline
 	\includegraphics[width=13cm]{../Pics/22-maria-db-create}
 	Abbildung 4: Erstellung einer Datenbank mit CREATE DATABASE
 	\newline
 	\newline
-	Wenn diese erfolgreiche erstellt wurde:
+	Wenn diese Datenbank erfolgreich erstellt wurde:
 	\newline
 	\includegraphics[width=13cm]{../Pics/23-maria-db-create-success}
 	Abbildung 5: Erfolgreiche Erstellung einer Datenbank
@@ -123,23 +123,23 @@
 	Abbildung 7: Datenbank wordpressAA2 erfolgreich erstellt
 	\newline
 	\newline
-	Nun kann man MariaDB mit dem Befehl \textit{quit} verlassen und sich um die Wordpress-Installation kümmern.
+	Nun kann man MariaDB mit dem Befehl \textit{quit} verlassen und sich um die WordPress-Installation kümmern.
 	
 	\section{WordPress}
-	Nach erfolgreichem Aufsetzen des LAMP-Stacks widmen wir uns in dieser Sektion der Installation und Konfiguration von Wordpress.
+	Nach erfolgreichem Aufsetzen des LAMP-Stacks widmen wir uns in dieser Sektion der Installation und Konfiguration von WordPress.
 	\newline
 	\newline
 	\includegraphics[width=13cm]{../Pics/30-wordpress-download}
-	Abbildung 8: Download der neusten Wordpress-Version
+	Abbildung 8: Download der neusten WordPress-Version
 	\newline
 	\newline
 	\includegraphics[width=13cm]{../Pics/32-wordpress-unzip}
-	Abbildung 9: Befehl zum Entpacken der komprimierten Wordpress-Datei
+	Abbildung 9: Befehl zum Entpacken der komprimierten WordPress-Datei
 	\newline
 	\newline
-	Nachdem Entpacken der Datei müssen wir zur korrekten Installation unseres Wordpress-Blogs ein paar Sachen vornehmen.
+	Nachdem Entpacken der Datei müssen wir zur korrekten Installation unseres WordPress-Blogs ein paar Sachen vornehmen.
 	\newline
-	Wie in Abbildung 9 zu entnehmen ist, befinden wir uns beim Download bereits im Verzeichnis wordpress. Dieser Ordner existiert bereits, weil wir zu Testzwecken unseres Severs eine HTML-File in den Wordpress-Ordner gestellt haben. Im Normalfall würde man sich beim Downloaden der komprimierten WordPress-Datei im Verzeichnis /var/www/html befinden und beim Entpacken wird der Ordner \textit{wordpress} automatisch im Verzeichnis html entpackt. Da wir uns aber bereits im Verzeichnis /var/www/html/wordpress befinden, wird unsere WordPress-Installation in /var/www/html/wordpress/wordpress entpackt. Man kann die Dateien einfach eine Stufe herauf verschieben:
+	Wie in Abbildung 9 zu entnehmen ist, befinden wir uns beim Download bereits im Verzeichnis wordpress. Dieser Ordner existiert bereits, weil wir zu Testzwecken unseres Severs eine HTML-File in den WordPress-Ordner gestellt haben. Im Normalfall würde man sich beim Downloaden der komprimierten WordPress-Datei im Verzeichnis /var/www/html befinden und beim Entpacken wird der Ordner \textit{wordpress} automatisch im Verzeichnis html entpackt. Da wir uns aber bereits im Verzeichnis /var/www/html/wordpress befinden, wird unsere WordPress-Installation in /var/www/html/wordpress/wordpress entpackt. Man kann die Dateien einfach eine Stufe herauf verschieben:
 	\newline
 	\begin{lstlisting}[language=bash]
 	# mv * /var/www/html/wordpress/wordpress 
@@ -152,7 +152,7 @@
 	\begin{lstlisting}[language=bash]
 	# rm -r /var/www/html/wordpress/wordpress
 	\end{lstlisting}
-	Da wir mit Root-Rechten arbeiten, kann es sein, dass die Berichtungen für den Apache-User beim WordPress-Ordner nicht richtig gesetzt sind. Ein Beispiel in Abbildung 10 mit dem Befehl ls sowie dem Befehl chown, um den Apache-User und die -Gruppe www-data Als Besitzer von Wordpress festzulegen:
+	Da wir mit Root-Rechten arbeiten, kann es sein, dass die Berichtungen für den Apache-User beim WordPress-Ordner nicht richtig gesetzt sind. Ein Beispiel in Abbildung 10 mit dem Befehl ls sowie dem Befehl chown, um den Apache-User und die -Gruppe www-data Als Besitzer von WordPress festzulegen:
 	\newline
 	\newline
 	\includegraphics[width=13cm]{../Pics/35-wordpress-permissions}
@@ -211,8 +211,9 @@
 	Abbildung 15: Erfolgreiche Installation von Captcha by BestWebSoft
 	\newline
 	\newline
+	Zusätzlich haben wir es so gemacht, dass wir die Moderation für Kommentare beibehalten, dass heisst, wir müssen die Kommentare zuerst freigeben. Das dient dazu, bezahlte Spammer auszufiltern.
 	\section{Schluss}
-	Das oben besprochene Vorgehen führt uns Schritt für Schritt zu einer funktionierenden WordPress-Installation, die den Vorgaben unseres Arbeitsauftrags entsprechen.
+	Das oben besprochene Vorgehen führt uns Schritt für Schritt zu einer funktionierenden WordPress-Installation, die den Vorgaben unseres Arbeitsauftrags entspricht.
 	\newline
 	\newline
 	WordPress zu installieren ist an sich keine schwierige Aufgabe und kann innert sehr kurzer Zeit bewerkstelligt werden. Die einzige Schwierigkeit, mit der wir uns etwas länger befassen mussten, war ein korrektes Nachvollziehen und Konfigurieren der VirtualHost-Konfigurationsdatei. Nach einigen Online-Recherchen und Tests unseres Servers haben wir einen Weg gefunden, welche den Anforderungen der Aufgabe genaustens entsprechen sollte.
