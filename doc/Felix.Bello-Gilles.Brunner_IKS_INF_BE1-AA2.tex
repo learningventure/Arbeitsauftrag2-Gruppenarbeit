@@ -25,6 +25,10 @@
 	\begin{lstlisting}[language=bash]
 	# screen -S newScreen
 	\end{lstlisting}
+	Und entsprechend der zweite User, session joinen:
+	\begin{lstlisting}[language=bash]
+	# screen -x session-nummer
+	\end{lstlisting}
 	Installation der für ein LAMP-Stack erforderlichen Pakete:
 	\begin{lstlisting}[language=bash]
 	# apt-get install mariadb-client-10.0
@@ -56,6 +60,7 @@
 	\begin{itemize}
 		\item a2dissite  000-default.conf
 	\end{itemize}
+	%TODO Ich finde wir sollten hier minimal genauer sein, weil es Technisch relevelant ist, und zwar ist der Grund dafür ist der nachfolgende Grund gilt, dieser, dass wir über die IP-Adresse/blog darauf navigieren, würde wir über eine registrierte Domain (z.b learningventure.ch) zugreifen würde es priorisiert auf learningventure.ch.conf
 	Der Grund dafür ist, wenn beide Konfigurationsdateien aktiviert sind (d.h. 000-default.conf und wordpress.conf), dann wird nur 000-default.conf verwendet, weil sie alphabetisch vor wordpress.conf kommt (das kann man testen, wenn man 000-default.conf deaktiviert und in sites-available folgendermassen umbenennt: x000-default.conf). Wenn man x000-default.conf und wordpress.conf beide aktiviert, wird dieses mal wordpress.conf verwendet, weil w vor x kommt (diese möchten wir nur am Rande anmerken, weil wir uns beim Testen kurz mit dieser Situation auseinandersetzen mussten).
 	\newline
 	\newline
