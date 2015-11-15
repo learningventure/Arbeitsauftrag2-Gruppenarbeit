@@ -60,10 +60,13 @@
 	\begin{itemize}
 		\item a2dissite  000-default.conf
 	\end{itemize}
-	Der Grund dafür ist, wenn beide Konfigurationsdateien aktiviert sind (d.h. 000-default.conf und wordpress.conf), dann wird nur 000-default.conf verwendet, weil sie alphabetisch vor wordpress.conf kommt (das kann man testen, wenn man 000-default.conf deaktiviert und in sites-available folgendermassen umbenennt: x000-default.conf). Wenn man x000-default.conf und wordpress.conf beide aktiviert, wird dieses mal wordpress.conf verwendet, weil w vor x kommt (diese möchten wir nur am Rande anmerken, weil wir uns beim Testen kurz mit dieser Situation auseinandersetzen mussten). Dazu möchten wir noch anmerken, dass dies lediglich dann eintrifft wenn die aufgerufene seite nicht über eine domain aufgerufen wird, wie in unserem Auftrag, also das heisst, da unser Blog über \textit{IP-Adresse/Blog} erreichbar sein soll und nicht über eine \textit{domain}, denn soll der Blog über die Domain erreichbar sein, dann würde nach der config \textit{domain.conf} gesucht werden, würde diese nicht gefunden, so würde entsprechend die vorher erwähnte \textit{"Regel"} in Kraft tretten.
+	Der Grund dafür ist, wenn beide Konfigurationsdateien aktiviert sind (d.h. 000-default.conf und wordpress.conf), dann wird nur 000-default.conf verwendet, weil sie alphabetisch vor wordpress.conf kommt (das kann man testen, wenn man 000-default.conf deaktiviert und in sites-available folgendermassen umbenennt: x000-default.conf). Wenn man x000-default.conf und wordpress.conf beide aktiviert, wird dieses mal wordpress.conf verwendet, weil w vor x kommt (diese möchten wir nur am Rande anmerken, weil wir uns beim Testen kurz mit dieser Situation auseinandersetzen mussten).
 	\newline
 	\newline
-	Wie bereits erwähnt soll die Wordpress-Installation auf dem Server unter dem Dateipfad /var/www/html/wordpress erfolgen, allerdings mit IP-Adresse/blog erreichbar sein. Das funktioniert ohne entsprechende Anpassung in der VirtualHost-Konfigurationsdatei allerdings nicht, weil was nach der IP-Adresse folgt, ist der System-Pfad der auf den im DocumentRoot angebenen Pfad folgt. Wenn im DocumentRoot z.B. /var/www/html steht, wird unsere Wordpress-Seite automatisch über IP-Adresse/wordpress zu erreichen sein, weil sie sich im Verzeichnis /var/www/html/wordpress befindet (also im DocumentRoot /var/www/html).
+	Dazu möchten wir noch anmerken, dass dies allerdings nicht eintreffen sollte, wenn man einen Server mit Domain Name hat (z.B www.meinserver.ch) und einer entsprechend (gleich) benannten VHost.conf Datei (dem erwähnten Beispiel hier: meinserver.ch.conf). 
+	\newline
+	\newline
+	Wie bereits erwähnt soll die Wordpress-Installation auf dem Server unter dem Dateipfad /var/www/html/wordpress erfolgen, allerdings mit IP-Adresse/blog erreichbar sein. Das funktioniert ohne entsprechende Anpassung in der VHost-Konfigurationsdatei allerdings nicht, weil was nach der IP-Adresse folgt, ist der System-Pfad der auf den im DocumentRoot angebenen Pfad folgt. Wenn im DocumentRoot z.B. /var/www/html steht, wird unsere Wordpress-Seite automatisch über IP-Adresse/wordpress zu erreichen sein, weil sie sich im Verzeichnis /var/www/html/wordpress befindet (also im DocumentRoot /var/www/html).
 	\newline
 	\newline
 	Zur Lösung dieses Problems verwenden wir gemäss Dokumentation \url{https://httpd.apache.org/docs/2.2/mod/mod_alias.html\#alias} ein sogenanntes \textit{Alias}. Die Idee ist folgende:
@@ -137,13 +140,17 @@
 	Nachdem Entpacken der Datei müssen wir zur korrekten Installation unseres Wordpress-Blogs ein paar Sachen vornehmen.
 	\newline
 	Wie in Abbildung 9 zu entnehmen ist, befinden wir uns beim Download bereits im Verzeichnis wordpress. Dieser Ordner existiert bereits, weil wir zu Testzwecken unseres Severs eine HTML-File in den Wordpress-Ordner gestellt haben. Im Normalfall würde man sich beim Downloaden der komprimierten WordPress-Datei im Verzeichnis /var/www/html befinden und beim Entpacken wird der Ordner \textit{wordpress} automatisch im Verzeichnis html entpackt. Da wir uns aber bereits im Verzeichnis /var/www/html/wordpress befinden, wird unsere WordPress-Installation in /var/www/html/wordpress/wordpress entpackt. Man kann die Dateien einfach eine Stufe herauf verschieben:
+	\newline
 	\begin{lstlisting}[language=bash]
-	# mv * /var/www/html/wordpress/wordpress /var/www/html/wordpress
+	# mv * /var/www/html/wordpress/wordpress 
+	  /var/www/html/wordpress
 	\end{lstlisting}
 	Die heruntergeladene Datei latest.tar.gz und den leeren Ordner /var/www/html/wordpress/wordpress kann man dann getrost mit der command rm entfernen:
 	\begin{lstlisting}[language=bash]
-	# rm /var/www/html/wordpress/latest.tar.gz &&
-	  rm -r /var/www/html/wordpress/wordpress
+	# rm /var/www/html/wordpress/latest.tar.gz
+	\end{lstlisting}
+	\begin{lstlisting}[language=bash]
+	# rm -r /var/www/html/wordpress/wordpress
 	\end{lstlisting}
 	Da wir mit Root-Rechten arbeiten, kann es sein, dass die Berichtungen für den Apache-User beim WordPress-Ordner nicht richtig gesetzt sind. Ein Beispiel in Abbildung 10 mit dem Befehl ls sowie dem Befehl chown, um den Apache-User und die -Gruppe www-data Als Besitzer von Wordpress festzulegen:
 	\newline
