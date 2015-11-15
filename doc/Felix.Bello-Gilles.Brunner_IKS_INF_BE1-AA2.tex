@@ -44,7 +44,7 @@
 	\newline
 	Nach erfolgreichem Festlegen des Passworts für den MariaDB-root-user schliesst sich das Fenster wieder. Das Einrichten der Datenbank besprechen wir in der Sektion MariaDB.
 	\subsection{Apache}
-	Gemäss der im Auftrag erfordlichen Konfigurationsdateien muss die Wordpress-Installation auf dem Server unter folgendem Dateipfad installiert werden: /var/www/html/wordpress.
+	Gemäss der im Auftrag erfordlichen Konfigurationsdateien muss die Wordpress-Installation auf dem Server unter /var/www/html/wordpress installiert werden.
 	Allerdings soll Wordpress auf IP-Adresse/blog aufgerufen werden. Dazu muss der VirtualHost in /etc/apache2/sites-available/ angepasst werden.
 	\subsubsection{VirtualHost}
 	Die VirtualHost-Konfigurationsdatei befindet sich in /etc/apache2/sites-available/
@@ -77,7 +77,10 @@
 	Abbildung 2: VHost-Datei in /etc/apache2/sites-available
 	\newline
 	\newline
-	Dieses Alias wird der VirtualHost Konfigurations-Datei /etc/apache2/sites-available/wordpress.conf hinzugefügt. Der Inhalt ist in Abbildung 2 zu sehen. Zusätzlich haben wir beschlossen, dass die IP-Adresse/wordpress nicht auf den Blog führen soll (es reicht, wenn man über /blog drauf kommt). Zu diesem Zweck haben wir eine index.html mit einer kleinen Nachricht definiert. Schliesslich ist zu erwähnen, dass wir unsere VHost-Datei auf das Wesentliche beschränkt haben, d.h. wir haben sie nur mit dem für die zur Erfüllung der Aufgabe erfordlichen Inhalt bestückt.
+	Dieses Alias wird der VirtualHost Konfigurations-Datei
+	\newline
+	/etc/apache2/sites-available/wordpress.conf hinzugefügt. Der Inhalt ist in Abbildung 2 zu sehen. Zusätzlich haben wir beschlossen, dass die
+    \newline IP-Adresse/wordpress nicht auf den Blog führen soll (es reicht, wenn man über /blog drauf kommt). Zu diesem Zweck haben wir eine index.html mit einer kleinen Nachricht definiert. Schliesslich ist zu erwähnen, dass wir unsere VHost-Datei auf das Wesentliche beschränkt haben, d.h. wir haben sie nur mit dem für die zur Erfüllung der Aufgabe erfordlichen Inhalt bestückt.
 	
 	\subsection{MariaDB}
 	Weil wir für Wordpress eine Datenbank brauchen, haben wir uns wie bereits erwähnt für \textit{\textbf{MariaDB}} als Datenbank entschieden und wie bereits in der LAMP-Sektion beschrieben installiert sowie ein Passwort für den root user der MariaDB festgelegt. Nun kümmern wir uns um die Einrichtung.
